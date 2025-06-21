@@ -1,17 +1,35 @@
+import { useState } from "react";
 
 function Learning_17062025() {
-  const ele=['kaliapan','Abimanyu', 'Santhosh']
+  const [students, setStudents] = useState(['kaliappan','Abimanyu', 'Santhosh', 'Jagananthan']);
+  const [newStudent, setNewStudent] = useState("");
+  const handleAddStudent = () => {
+    if (newStudent.trim() !=="") {
+      setStudents([...students, newStudent]);
+      setNewStudent("");
+    }
+  }
   return (
     <div className="Learning_17062025">
     <h1>17/06/2025 Learning</h1>
     <p> Check paragraph..!!</p>
-    <h4>The Students of the class are </h4>
+    <h4>The Students of the class are:</h4>
     <ul>
-      {ele.map((name, index) => (
+      {students.map((name, index) => (
         <li key={index}>{name}</li>
       ))}
     </ul>
-    <input></input>
+    <input type = "text"
+    placeholder = "Enter student name"
+    value = {newStudent}
+    onChange = {(e) => setNewStudent(e.target.value)}
+    onKeyDown = {(e) => {
+      if (e.key === "Enter") {
+        handleAddStudent();
+      }
+    }}
+    />
+    <button onClick = {handleAddStudent}>Add Student</button>
     </div>
   );
 }
