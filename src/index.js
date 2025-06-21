@@ -8,8 +8,6 @@ const myFirstElement = <div>
   <hr/>
   <App/>
   <hr/>
-  <Learning_17062025/>
-  <hr/>
   </div>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
