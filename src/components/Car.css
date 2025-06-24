@@ -1,0 +1,14 @@
+.car-container {
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: lightyellow;
+}
+.car-container h1  {
+    color: darkblue;
+}
+.car-container p {
+    font-size: 18px;
+    font-style: italic;
+}
