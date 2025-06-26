@@ -1,0 +1,16 @@
+.header-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.header-container h1 {
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-container button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
