@@ -5,10 +5,12 @@ import Learning_23062025 from './components/Learning_23062025.js';
 import Car from './components/car.js';
 import Learning_26062025 from './components/Learning_26062025.js';
 // import Header_check from './Header';
+import Learning_27062025 from './components/Learning_27062025.js';
 import CarNameChange from './CarNameChange.js';
 function App() {
   return (
     <div className="App">
+      <Learning_27062025 />
       <CarNameChange />
       {/* <Header_check favcol="Yellow"/>
        */}
