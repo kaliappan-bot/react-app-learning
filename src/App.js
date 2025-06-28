@@ -7,9 +7,11 @@ import Learning_26062025 from './components/Learning_26062025.js';
 // import Header_check from './Header';
 import Learning_27062025 from './components/Learning_27062025.js';
 import CarNameChange from './CarNameChange.js';
+import Learning_28062025 from './components/Learning_28062025.js';
 function App() {
   return (
     <div className="App">
+      <Learning_28062025 brand="Ford" />
       <Learning_27062025 />
       <CarNameChange />
       {/* <Header_check favcol="Yellow"/>
