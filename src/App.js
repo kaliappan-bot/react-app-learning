@@ -9,9 +9,13 @@ import Learning_27062025 from './components/Learning_27062025.js';
 import CarNameChange from './CarNameChange.js';
 import Learning_28062025 from './components/Learning_28062025.js';
 import Learning_29062025 from './components/Learning_29062025';
+import Learning_30062025 from './components/Learning_30062025.js';
+import Header from './components/Header.js';
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Learning_30062025 />
       <Learning_29062025 />
       <Learning_28062025 brand="Ford" />
       <Learning_27062025 />
